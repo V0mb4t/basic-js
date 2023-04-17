@@ -23,16 +23,18 @@ function countCats(/* matrix */) {
 function countCats(matrix) {
   let countOfCats = 0;
 
-
+  // Проходимся по каждому элементу в массиве
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
+      // Проверяем, является ли элемент ушами кошки
       if (matrix[i][j] === '^^') {
+        // Если является, увеличиваем счетчик
         countOfCats++;
       }
     }
   }
 
-
+  // Возвращаем общее количество найденных кошек
   return countOfCats;
 }
 
